@@ -1,0 +1,1 @@
+browser-sync start --proxy "test.test" --files "ressources/views/*.blade.php,ressources/views/auth/*.blade.php,ressources/views/layouts/*.blade.php,ressources/views/auth/passwords/*.blade.php,public/css/*.css, public/js/*.js"
