@@ -8,8 +8,10 @@
     <link rel="shortcut icon" href="{{ asset('images/favicon.ico')}}">
 
     <title>Administration - Warp Code</title>
-     <!-- Custom box css -->
-     <link href="{{ asset('plugins/custombox/dist/custombox.min.css')}}" rel="stylesheet">
+    <!--Morris Chart CSS -->
+    <link rel="stylesheet" href="{{ asset('plugins/morris/morris.css')}}">
+    <!-- Custom box css -->
+    <link href="{{ asset('plugins/custombox/dist/custombox.min.css')}}" rel="stylesheet">
     <!-- form Uploads -->
     <link href="{{ asset('plugins/fileuploads/css/dropify.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- App css -->

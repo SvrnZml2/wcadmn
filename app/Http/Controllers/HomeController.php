@@ -1,10 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Actualite;
+use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+
 use Validator;
 
 class HomeController extends Controller
@@ -26,7 +28,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $actualites = Actualite::orderBy('id', 'desc')->limit(3)->get();
+        $products = Product::orderBy('id', 'desc')->limit(3)->get();
+        $countProduct = Product::count();
+        $countActualite = Actualite::count();
+
+
+        return view('home', ['actualites' => $actualites, 'products' => $products, 'countProduct' => $countProduct, 'countActualite' => $countActualite]);
     }
 
     public function update(Request $request)

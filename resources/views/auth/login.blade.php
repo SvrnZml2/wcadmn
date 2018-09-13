@@ -1,6 +1,6 @@
-@extends('layouts.admin')
+@extends('header')
 
-@section('content')
+
     <div class="wrapper-page">
         <div class="text-center">
             <a href="" class="logo"><span>Administration by</span><img src="{{asset('images/logo-ligne.png')}}" alt="Logo de warp code">
@@ -85,4 +85,4 @@
     </div>
     <!-- end wrapper page -->
 
-@endsection
+

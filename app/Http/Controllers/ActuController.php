@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Actualite;
 use App\Http\Controllers\ActuController;
+
 use Illuminate\Http\Request;
 use Validator;
 use Illuminate\Support\Facades\Auth;

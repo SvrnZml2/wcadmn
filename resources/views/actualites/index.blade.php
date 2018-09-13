@@ -19,7 +19,9 @@
                         <a href="#" data-filter="*" class="current waves-effect waves-custom">Tout</a>
                         @foreach ($actualites as $actualite)
                         <a href="#" data-filter=".{{$actualite->category}}" class="waves-effect waves-custom">{{$actualite->category}}</a>
+
                         @endforeach
+
                         {{-- <a href="#" data-filter=".natural" class="waves-effect waves-custom">Natural</a>
                         <a href="#" data-filter=".creative" class="waves-effect waves-custom">Creative</a>
                         <a href="#" data-filter=".personal" class="waves-effect waves-custom">Personal</a>
@@ -33,7 +35,7 @@
                     @foreach ($actualites as $actualite )
 
 
-                    <div class="col-md-3 col-xl-3 col-lg-3 {{$actualite->category}}">
+                    <div class="col-md-4 col-xl-4 col-lg-4 {{$actualite->category}}">
 
                         <div class="gal-detail thumb">
                             <a href="{{ route('actualites.show', $actualite->id) }}"> <img src="{{$actualite->image_pres}}"
@@ -46,7 +48,7 @@
                             <p class="text-muted">
                                 {{$actualite->description}}
                             </p>
-                           
+
                             <img class="rounded-circle img-thumbnail img-responsive" src="{{ Gravatar::src($actualite->user->email)}}"
                                 alt="{{ Gravatar::src($actualite->user->name)}}">
                             <p class="text-muted">le

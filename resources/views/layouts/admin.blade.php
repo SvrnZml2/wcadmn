@@ -2,7 +2,6 @@
 @extends('navigation')
 
 <body>
-    <div class="clearfix"></div>
     <main>
         @yield('content')
 
